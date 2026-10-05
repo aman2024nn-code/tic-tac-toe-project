@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe ∞</title>
+    <link rel="stylesheet" href="tic.css">
+</head>
+
+<body>
+
+<h1 class="title">TIC TAC TOE ∞</h1>
+<div class="board">
+    
+    <div class="cell" id="item2" draggable="true"></div>
+    <div class="cell" id="item1" draggable="true"></div>
+    <div class="cell" id="item3" draggable="true"></div>
+    <div class="cell" id="item4" draggable="true"></div>
+    <div class="cell" id="item5" draggable="true"></div>
+    <div class="cell" id="item6" draggable="true"></div>
+    <div class="cell" id="item7" draggable="true"></div>
+    <div class="cell" id="item8" draggable="true"></div>
+    <div class="cell" id="item9" draggable="true"></div>
+    
+</div>
+<div id="result" class="hidden">
+  <h1 id="winnerText"></h1>
+  <button onclick="newGame()">New Game</button>
+</div>
+<button class="reset">Reset Game</button>
+<div class="moves">
+    <div id="x">X move</div>
+    <div id="o">O move</div>
+</div>
+
+
+<script src="tic.js"></script>
+
+</body>
+</html>
