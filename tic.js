@@ -184,3 +184,24 @@ cells.forEach((cell, index) => {
 //     cell.style.color="#F43F5E"
 // }})
 document.querySelector(".reset").addEventListener("click", reset);
+const rulesModal = document.getElementById("rulesModal");
+
+function openRules() {
+  rulesModal.classList.add("open");
+}
+
+function closeRules() {
+  rulesModal.classList.remove("open");
+}
+
+document.getElementById("rulesBtn").addEventListener("click", openRules);
+document.getElementById("closeRules").addEventListener("click", closeRules);
+document.getElementById("startGame").addEventListener("click", closeRules);
+
+rulesModal.addEventListener("click", (e) => {
+  if (e.target === rulesModal) closeRules();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeRules();
+});

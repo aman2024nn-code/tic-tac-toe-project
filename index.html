@@ -10,6 +10,8 @@
 <body>
 
 <h1 class="title">TIC TAC TOE ∞</h1>
+<button id="rulesBtn" class="rules-btn">How to Play</button>
+<br> <br>
 <div class="board">
     
     <div class="cell" id="item2" draggable="true"></div>
@@ -31,6 +33,36 @@
 <div class="moves">
     <div id="x">X move</div>
     <div id="o">O move</div>
+</div>
+
+<div id="rulesModal" class="modal">
+  <div class="modal-box">
+    <button id="closeRules" class="modal-close" aria-label="Close">&times;</button>
+    <h2>How to Play</h2>
+
+    <h3>Phase 1: Place your pieces</h3>
+    <ul>
+      <li>X goes first, then players take turns.</li>
+      <li>Click an empty cell to place a piece.</li>
+      <li>Each player can place only 3 pieces.</li>
+    </ul>
+
+    <h3>Phase 2: Move your pieces</h3>
+    <ul>
+      <li>After all 3 pieces are placed, drag one of your pieces to an empty cell.</li>
+      <li>You can move up, down, left or right by one cell.</li>
+      <li>Any piece can move into the center cell if it is empty.</li>
+      <li>A piece in the center can move to any empty cell.</li>
+    </ul>
+
+    <h3>How to win</h3>
+    <ul>
+      <li>Get 3 of your pieces in a row: horizontal, vertical or diagonal.</li>
+      <li>Press Reset to start a new game.</li>
+    </ul>
+
+    <button id="startGame" class="rules-btn">Got it!</button>
+  </div>
 </div>
 
 
